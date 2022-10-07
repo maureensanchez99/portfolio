@@ -7,8 +7,8 @@ function App() {
       <div className="nav-header">
         <h2 className="title">Maureen Sanchez</h2>
         <div className="nav-items">
-          <p className="home-btn">Home</p>
-          <p className="Projects">Projects</p>
+          <p>Home</p>
+          <p>Projects</p>
         </div>
       </div>
     </div>
