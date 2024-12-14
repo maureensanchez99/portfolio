@@ -48,9 +48,8 @@
     string[] NavBarNames = { "Home", "Portfolio", "Work Experience", "Involvement", "Contact"};
     string[] NavBarPages = { "/", "portfolio", "workexperience", "involvement", "contact"};
 
-    string NavBarStyle, NavTextStyle;
-    protected override void OnInitialized()
-    {
+    string NavBarStyle, NavTextStyle  = "";
+    protected override void OnInitialized() {
         var currentPage = Navigation.ToBaseRelativePath(Navigation.Uri);
 
         /* changes the color of the navbar based on the page it's on

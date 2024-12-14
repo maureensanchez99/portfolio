@@ -1,5 +1,10 @@
+/* Intro Section */
 .intro-box {
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .left-side {
@@ -8,16 +13,57 @@
 
 h2 {
     font-family: 'Playfair Display';
+    font-weight: bold;
 }
 
 p {
     font-family: 'Lato';
 }
 
+/* Headshot Styling */
 .headshot {
     background-image: url('/images/general/headshot.jpg');
-    max-width: 350px;
+    width: 350px;
     height: 350px;
     background-size: cover;
     float: right;
+    background-position: center;
+    flex-shrink: 0;
+    border-radius: 10%;
+    transition: transform 0.5s ease;
+}
+
+.headshot:hover {
+    transform: scale(1.1);  
+}
+
+.zoom-animation {
+    animation: spin 5s linear infinite;  
+}
+
+/* About Section */
+.about {
+    padding-top: 30px;
+}
+
+/* Timeline Styling */
+.timeline {
+    margin-top: 20px;
+    width: 100%;
+    border: 2.5px outset #714955;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--rz-shadow-10);
+}
+
+.radzen-timeline-item {
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.radzen-timeline-label {
+    font-weight: bold;
+    font-size: 1rem;
 }
