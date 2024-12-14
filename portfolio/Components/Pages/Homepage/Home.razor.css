@@ -1,0 +1,23 @@
+.intro-box {
+    width: 100vw;
+}
+
+.left-side {
+    max-width: 45%;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+}
+
+p {
+    font-family: 'Lato';
+}
+
+.headshot {
+    background-image: url('/images/general/headshot.jpg');
+    max-width: 350px;
+    height: 350px;
+    background-size: cover;
+    float: right;
+}
