@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@400;700;900&display=swap');
 
+/*
+Color Pallette:
+    #EEEEFF -> lavender (web)
+    #B8EF1B -> lime
+    #98D640 -> yellow green
+    #714955 -> eggplant
+    #050609 -> black
+*/
+
 html, body {
     font-family: 'Lato', 'Playfair Display', Helvetica, Arial, sans-serif;
 }
