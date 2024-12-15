@@ -1,0 +1,39 @@
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
