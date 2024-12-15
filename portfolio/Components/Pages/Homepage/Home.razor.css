@@ -33,6 +33,7 @@ p {
     flex-shrink: 0;
     border-radius: 10%;
     transition: transform 0.5s ease;
+    box-shadow: var(--rz-shadow-10);
 }
 
 .headshot:hover {
