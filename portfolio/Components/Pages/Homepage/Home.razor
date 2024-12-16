@@ -1,0 +1,71 @@
+﻿@page "/"
+@using Radzen
+
+<PageTitle>Home</PageTitle>
+
+<div class="intro-box">
+    <div class="left-side">
+        <h2>Hello my name is Maureen Sanchez!</h2>
+        <p>
+            Welcome to my site where I show off my portfolio and what I have done with my 
+            life in terms of academic life and personal development.
+        </p>
+    </div>
+    <div class="headshot @imageClass" @onclick="OnImageClick" @onmouseover="OnImageHover" @onmouseout="OnImageOut"></div>
+</div>
+    
+<div class="about">
+    <h2>About</h2>
+    <p>
+        Currently I am a student at Louisiana State University studying computer science with
+        a focus in software engineering. 
+    </p>
+</div>
+
+<div class="timeline">
+    <h2>My Academic Journey</h2>
+    <RadzenTimeline>
+        <Items>
+            @foreach (var timelineEvent in timelineEvents)
+            {
+                <RadzenTimelineItem PointStyle="PointStyle.Primary" PointShadow="6">
+                    <LabelContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle2" class="rz-m-0">@timelineEvent.Date</RadzenText>
+                    </LabelContent>
+                    <ChildContent>
+                        @timelineEvent.Description
+                    </ChildContent>
+                </RadzenTimelineItem>
+            }
+        </Items>
+    </RadzenTimeline>
+</div>
+
+@code {
+    private string imageClass = string.Empty;
+
+    private void OnImageClick() {
+        imageClass = "zoom-animation";
+    }
+
+    private void OnImageHover() {
+        imageClass = "zoom-animation";
+    }
+
+    private void OnImageOut() {
+        imageClass = string.Empty;
+    }
+
+    public class TimelineEvent {
+        public string Date { get; set; } = "";
+        public string Description { get; set; } = "";
+    }
+
+    private List<TimelineEvent> timelineEvents = new List<TimelineEvent> {
+        new TimelineEvent { Date = "August 2022", Description = "Transferred and started attending Louisiana State University in Baton Rouge, Louisiana." },
+        new TimelineEvent { Date = "August 2021", Description = "Started attending Hartnell College in Salinas, California" },
+        new TimelineEvent { Date = "May 2021", Description = "Decided to transfer from Cabrillo College to Hartnell College" },
+        new TimelineEvent { Date = "August 2017", Description = "Started attending Cabrillo College in Aptos, California." },
+        new TimelineEvent { Date = "June 2017", Description = "Graduated from North Monterey County High School in Castroville, California" }
+    };
+}
