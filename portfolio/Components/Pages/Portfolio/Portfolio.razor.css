@@ -26,11 +26,12 @@ p {
 .project h4 {
     margin: 0;
     font-size: 1.25rem;
-    font-weight: bold;
+    font-family: 'Playfair Display';
+    padding-bottom: 10px;
 }
 
 .project a {
-    color: #007bff;
+    color: #714955;
     text-decoration: none;
 }
 
