@@ -11,7 +11,7 @@
 </p>
 
 <div class="courses">
-    <h3>Courses</h3>
+    <h2>Courses</h2>
     <div class="container">
         @foreach (var project in projectSources.Where(p => p.Type == "Course")) {
             <div class="project">
@@ -24,7 +24,7 @@
 </div>
 
 <div class="rsos">
-    <h3>Student Organizations</h3>
+    <h2>Student Organizations</h2>
     <div class="container">
         @foreach (var project in projectSources.Where(p => p.Type == "RSO")) {
             <div class="project">
@@ -37,7 +37,7 @@
 </div>
 
 <div class="hackathons">
-    <h3>Hackathons</h3>
+    <h2>Hackathons</h2>
     <div class="container">
         @foreach (var project in projectSources.Where(p => p.Type == "Hackathon")) {
             <div class="project">
@@ -50,7 +50,7 @@
 </div>
 
 <div class="personal-projects">
-    <h3>Personal Projects</h3>
+    <h2>Personal Projects</h2>
     <div class="container">
         @foreach (var project in projectSources.Where(p => p.Type == "Personal")) {
             <div class="project">
