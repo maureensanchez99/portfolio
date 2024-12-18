@@ -7,6 +7,12 @@ h2 {
 p {
     font-family: 'Lato';
     padding-left: 20px;
+    font-style: italic;
+}
+
+a {
+    padding-left: 20px;
+    color: #714955;
 }
 
 .timeline {
