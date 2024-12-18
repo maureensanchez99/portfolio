@@ -1,0 +1,37 @@
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+p {
+    font-family: 'Lato';
+    padding-left: 20px;
+    font-style: italic;
+}
+
+a {
+    padding-left: 20px;
+    color: #714955;
+}
+
+.timeline {
+    margin-top: 20px;
+    width: 100%;
+    border: 2.5px outset #714955;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--rz-shadow-10);
+}
+
+.radzen-timeline-item {
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.radzen-timeline-label {
+    font-weight: bold;
+    font-size: 1rem;
+}

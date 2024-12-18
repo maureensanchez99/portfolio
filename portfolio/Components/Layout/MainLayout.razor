@@ -45,16 +45,18 @@
 
 @code {
     // Create a dictionary that will hold the NavBar pages
-    string[] NavBarNames = { "Home", "Portfolio", "Work Experience", "Involvement", "Contact"};
-    string[] NavBarPages = { "/", "portfolio", "workexperience", "involvement", "contact"};
+    string[] NavBarNames = { "Home", "Portfolio", "Resume", "Involvement", "Contact"};
+    string[] NavBarPages = { "/", "portfolio", "resume", "involvement", "contact"};
 
-    string NavBarStyle, NavTextStyle  = "";
+    string NavBarStyle = "", NavTextStyle = "";
     protected override void OnInitialized() {
         var currentPage = Navigation.ToBaseRelativePath(Navigation.Uri);
 
-        /* changes the color of the navbar based on the page it's on
+        //changes the color of the navbar based on the page it's on
         (NavBarStyle, NavTextStyle) = currentPage switch {
-
-        };*/
+            "workexperience" => ("background: linear-gradient(180deg, #714955 0%, #714955 100%);", "color: #050609"),
+            "portfolio" => ("background: linear-gradient(180deg, #714955 0%, #714955 75%);", "color: #050609"),
+            _ => ("background: #98D640;", "")
+        };
     }
 }

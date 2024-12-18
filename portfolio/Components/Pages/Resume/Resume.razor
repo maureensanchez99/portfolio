@@ -1,0 +1,43 @@
+@page "/resume"
+@inherits WorkBase
+@using Radzen
+
+<PageTitle>Resume</PageTitle>
+
+<h2>Resume from Internships</h2>
+<a href="/documents/Resume_Maureen_Sanchez.pdf" target="_blank">View Resume for internship</a>
+<p>Last Updated: 12/18/2024</p>
+
+<h2>Master Resume</h2>
+<a href="/documents/Resume_Maureen_Sanchez.pdf" target="_blank">View Master Resume</a>
+<p>Last Updated: 12/18/2024</p>
+
+<h2>Here is a full timeline of all my work experience</h2>
+
+<p>
+    I've worked a number of jobs ranging from part-time to temporary employment to internships, 
+    with not all of them relating to what I'm studying.
+</p>
+
+<div class="timeline">
+    <h2>My Academic Journey</h2>
+    <RadzenTimeline>
+        <Items>
+            @foreach (var timelineEvent in timelineEvents)
+            {
+                <RadzenTimelineItem PointStyle="PointStyle.Primary" PointShadow="6">
+                    <LabelContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle2" class="rz-m-0">@timelineEvent.TimeWorked </RadzenText>
+                    </LabelContent>
+                    <ChildContent>
+                        @timelineEvent.Company
+                        <br/>
+                        @timelineEvent.Position
+                        <br/>
+                        @timelineEvent.Description
+                    </ChildContent>
+                </RadzenTimelineItem>
+            }
+        </Items>
+    </RadzenTimeline>
+</div>
