@@ -1,0 +1,10 @@
+h1, h2 {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+p {
+    font-family: 'Lato';
+    padding-left: 20px;
+}
