@@ -9,13 +9,16 @@
 <div class="container">
     @foreach (var volunteer in volunteerDetails.Where(p => p.Type == "LSU")) {
         <div class="volunteer">
-            <h4>@volunteer.Event</h4>
-            <h4>@volunteer.Position</h4>
-            <p>
-                @volunteer.Date, 
-                @volunteer.Description
-            </p>
-            <div class="vlntr-image">@volunteer.ImagePath</div>
+            <div class="volunteer-details">
+                <h4>@volunteer.Event</h4>
+                <h4 style="font-style: italic;">@volunteer.Group</h4>
+                <p>
+                    @volunteer.Date 
+                    <br/>
+                    @volunteer.Description
+                </p>
+            </div>
+            <img class="vlntr-image" src="@volunteer.ImagePath" alt="@volunteer.Event"/>
         </div>
     }
 </div>
