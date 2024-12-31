@@ -24,5 +24,37 @@
 </div>
 
 <h2>Hartnell College</h2>
+<div class="container">
+    @foreach (var volunteer in volunteerDetails.Where(p => p.Type == "Hartnell")) {
+        <div class="volunteer">
+            <div class="volunteer-details">
+                <h4>@volunteer.Event</h4>
+                <h4 style="font-style: italic;">@volunteer.Group</h4>
+                <p>
+                    @volunteer.Date 
+                    <br/>
+                    @volunteer.Description
+                </p>
+            </div>
+            <img class="vlntr-image" src="@volunteer.ImagePath" alt="@volunteer.Event"/>
+        </div>
+    }
+</div>
 
 <h2>Cabrillo College</h2>
+<div class="container">
+    @foreach (var volunteer in volunteerDetails.Where(p => p.Type == "Cabrillo")) {
+        <div class="volunteer">
+            <div class="volunteer-details">
+                <h4>@volunteer.Event</h4>
+                <h4 style="font-style: italic;">@volunteer.Group</h4>
+                <p>
+                    @volunteer.Date 
+                    <br/>
+                    @volunteer.Description
+                </p>
+            </div>
+            <img class="vlntr-image" src="@volunteer.ImagePath" alt="@volunteer.Event"/>
+        </div>
+    }
+</div>
