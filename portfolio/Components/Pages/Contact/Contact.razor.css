@@ -1,0 +1,30 @@
+h1, h2 {
+    font-family: 'Playfair Display';
+}
+
+h3, h4 {
+    font-family: 'Lato';
+    margin-left: 10px;
+}
+
+p {
+    font-family: 'Lato';
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    display: inline-flex;
+    gap: 20px;
+    float: left;
+}
+
+.icon-img {
+    width: 75px;
+    height: 75px;
+}
