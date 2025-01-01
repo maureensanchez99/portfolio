@@ -1,0 +1,26 @@
+@inherits ContactBase
+@page "/contact"
+
+<PageTitle>Contact</PageTitle>
+
+<h1>Contact Information</h1>
+
+<ul>
+    @foreach (var contactInfo in contactSources) {
+        <li>
+            <h2>@contactInfo.Type :</h2> 
+            <p>@contactInfo.Contact</p>
+        </li>
+    }
+</ul>
+
+<h2>Social Media Platforms</h2>
+<div class="container">
+    @foreach (var platform in linkSources) {
+        <div class="project">
+            <a href="@platform.Link" target="_blank">
+                <img src="@platform.Icon" class="icon-img">
+            </a>
+        </div>
+    }
+</div>
