@@ -22,6 +22,24 @@ namespace portfolio.Components.Pages {
                 Type = "Hackathon",
                 Description = "A web application that helps travelers be knowledgeable and aware of variables they need to know while traveling in foreign countries.",
                 Link = "https://github.com/maureensanchez99/Pocket-Travel"
+            },
+            new ProjectSource {
+                Title = "Sustain Me",
+                Type = "Hackathon",
+                Description = "A website that is created to encourage people to be more cautious in their actions to be more environmentally friendly (a sustainable lifestyle).",
+                Link = "https://github.com/maureensanchez99/AthenaHacks2020"
+            },
+            new ProjectSource {
+                Title = "Studybuddy",
+                Type = "Course",
+                Description = "C++ application to help students find others in their classes looking for people to study with.",
+                Link = "https://github.com/maureensanchez99/AthenaHacks2020"
+            },
+            new ProjectSource {
+                Title = "Wheel of Fortune clone",
+                Type = "Course",
+                Description = "A text based application for a multiplayer Wheel of Fortune game.",
+                Link = "https://github.com/maureensanchez99/AthenaHacks2020"
             }
         };
     }
